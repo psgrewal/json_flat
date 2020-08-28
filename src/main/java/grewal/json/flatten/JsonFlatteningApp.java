@@ -11,7 +11,7 @@ public class JsonFlatteningApp {
         try {
             fullJson = getJsonInput();
         } catch (IOException ex) {
-            System.err.println("Exception when reading json from system input");
+            System.err.println("Exception when reading json from system input " + ex.getMessage());
             System.exit(-1);
         }
         JsonFlattener flattener = JsonFlattenerImpl.getInstance();

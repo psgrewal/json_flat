@@ -4,6 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Java Main application, which accepts a json string from the system input and converts it to a flattened json string
+ * where nested fields if any are promoted to the base level with field names concatenated with "."
+ */
 public class JsonFlatteningApp {
 
     public static void main(String[] args) {
